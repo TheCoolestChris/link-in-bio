@@ -1,38 +1,175 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset=""UTF-8">
-    <title>Link in bio</title>
-  </head>
 
-  <body>
-    <style> 
-      * {
-        border: 1px red dashed;
-      }
-    </style>
+<head>
+  <meta charset="UTF-8">
 
-    <div =class"main-container"></div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div = class"image-row">
-      <img src="images/Dog Reading.jpg" alt="A dog with glasses reading">
+  <title>Chris Reyes' Links</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  
+  <style>
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(
+        180deg,#001f5c,#66d9ff,#ffffff, #ffd6ec,#ff69b4);
+      color: rgba(255, 255, 255, 1.0);
+      font-family: "Raleway";
+    }
+
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
+    }
+
+    .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      border-radius: 200px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: 2px 2px 10px 0px rgba(122,32,122,0.25);
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: "Playfair Display";
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="image-row">
+      <img class="avatar-image" src="/thumbnails/profile-pic.jpg" alt="A dog with sunglasses smiling at the camera">
     </div>
 
-    <div = class"name-row">
+    <div class="name-row">
       Christopher Reyes
     </div>
 
-    <div = class"social-icons-row">
-      <a href="https://github.com/TheCoolestChris" target="_blank">
-        GitHub
-      </a>
-    </div>
-
-    <div = class"links-row">
-      <a 
-        GitHub
+    <div class="social-icons-row">
+      <a href="https://github.com/TheCoolestChris"  target="_blank">
+         <i class="fa-brands fa-github"></i>
       </a>
 
+      <!-- I only have Github. -->
+
     </div>
-   </body>
+
+    <div class="links-row">
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/startup.jpg" alt="Someone creating a business blueprint">
+
+        <a class="link-text" target="_blank" href="http://paulgraham.com/startupideas.html">
+          How to Get Startup Ideas
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/typography.jpg" alt="A photo of letter blocks">
+
+        <a class="link-text" target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
+          Typography in ten minutes
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/checklist.jpg" alt="A notebook with a written checklist">
+
+        <a class="link-text" target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">
+          A Life-Saving Checklist
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/lifespan.jpg" alt="A zoomed in photo of a clock">
+
+        <a class="link-text" target="_blank" href="https://waitbutwhy.com/2015/12/the-tail-end.html">
+          The Tail End
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/rome.jpg" alt="A picture of Rome's colleseum">
+
+        <a class="link-text" target="_blank" href="https://www.exurbe.com/the-shape-of-rome/">
+          The Shape of Rome
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/egg.jpg" alt="Eggs in a carton with drawn faces">
+
+        <a class="link-text" target="_blank" href="http://www.galactanet.com/oneoff/theegg_mod.html">
+          The Egg
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/question-mark.jpg" alt="Four question marks">
+
+        <a class="link-text" target="_blank" href="https://users.ece.cmu.edu/~gamvrosi/thelastq.html">
+          The Last Question
+        </a>
+      </div>
+    </div> 
+  </div> 
+  </body>
 </html>
