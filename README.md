@@ -1,6 +1,6 @@
 # Link in Bio Project
 
-## A basic bio page with links to websites and profile 
+## A basic bio page with links to websites and profiles
 
 This project is a simple website created as a school project to practice HTML and CSS. The website is dedicated as a personal use page for users who want to connect multiple accounts or web pages about themselves.
 
